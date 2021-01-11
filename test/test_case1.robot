@@ -2,18 +2,17 @@
 Library           SeleniumLibrary
 Suite Setup         Go to google
 Suite Teardown     Close All Browsers
-Library             C:/Users/Anna_Poimenova/PycharmProjects/robot-framework/test/FirstModule.py
+Library             C:/Users/Anna_Poimenova/PycharmProjects/RobotProject/test/FirstModule.py
 
 *** Test Cases ***
 Test
     [Tags]           basic
     Check test data first  2    22
-    Check test data first  2    24
     Search and check    pytest  python
 
 *** Keywords ***
 Go to google
-    Create Webdriver    Chrome   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/robot-framework/test/chromedriver_win32/chromedriver.exe
+    Create Webdriver    Chrome   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/RobotProject/test/chromedriver_win32/chromedriver.exe
     Go to    https://habr.com/ru
 
 Check test data first
