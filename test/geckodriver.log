@@ -1,0 +1,17 @@
+1609771074056	geckodriver	INFO	Listening on 127.0.0.1:62481
+1609771077131	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ANNA_P~1\\AppData\\Local\\Temp\\rust_mozprofileZdKu9Z"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609771080160	Marionette	INFO	Listening on port 62491
+1609771080288	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript warning: https://an.yandex.ru/partner-code-bundles/13491/34cecbb6f11236590f8d.js, line 2: unreachable code after return statement
+JavaScript warning: https://an.yandex.ru/partner-code-bundles/13491/34cecbb6f11236590f8d.js, line 2: unreachable code after return statement
+1609771087371	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1609771167690	Marionette	INFO	Stopped listening on port 62491
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
