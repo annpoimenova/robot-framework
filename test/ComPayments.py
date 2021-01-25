@@ -1,11 +1,12 @@
 from robot.api.deco import keyword
 # from selenium import webdriver
 from appium import webdriver
+import time
 
 class App:
 
     def __init__(self):
-        desired_caps = {"app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}
+        desired_caps = {"app": "C:\Program Files (x86)\Poimenov\CommunalPayments\CommunalPayments.WPF.exe"}
         self.driver = webdriver.Remote(
         command_executor='http://127.0.0.1:4723',
         desired_capabilities=desired_caps)
@@ -20,16 +21,17 @@ class ComPayments(object):
         self.driver = App().setup()
         return self.driver
 
-    def click_calculator_button(self, str):
-        self.driver.find_element_by_name(str).click()
+    def click_menu_payments(self):
+        self.driver.find_element_by_class_name("Menu").click()
+        self.driver.find_element_by_name("Payments").click()
+        self.driver.find_element_by_name("New Payment").click()
+        time.sleep(3)
+        self.driver.find_element_by_class_name("ComboBox").click()
+        self.driver.find_element_by_name("116665635, УЛ ГЕРОЕВ ТРУДА , 28А/36").click()
+        self.driver.find_element_by_class_name("TextBox").send_keys("Комментарий Тестовый")
 
-    def getresult(self):
-        display_text = self.driver.find_element_by_id("CalculatorResults").text
-        display_text = display_text.strip("Display is ")
-        display_text = display_text.rstrip(' ')
-        display_text = display_text.lstrip(' ')
-        return display_text
+
 
     def quit_app(self):
-        self.driver.close()
         self.driver.quit()
+        # self.driver.close()

@@ -11,8 +11,7 @@ Test
 Search and check
     [Arguments]     ${query}
     Open App
-    Click Calculator Button     ${query}
-    Getresult
+    Click Menu Payments
     Quit App
 
 
