@@ -12,7 +12,7 @@ Test
 
 *** Keywords ***
 Go to google
-    Create Webdriver    Chrome   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/RobotProject/test/chromedriver_win32/chromedriver.exe
+    Create Webdriver    Edge   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/RobotProject/test/chromedriver_win32/msedgedriver.exe
     Go to    https://habr.com/ru
 
 Check test data first

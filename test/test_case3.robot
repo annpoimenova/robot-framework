@@ -11,7 +11,7 @@ Test
 
 *** Keywords ***
 Go to google
-    Create Webdriver    Chrome   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/robot-framework/test/chromedriver_win32/chromedriver.exe
+    Open Browser    Chrome   executable_path=C:/Users/Anna_Poimenova/PycharmProjects/robot-framework/test/chromedriver_win32/chromedriver.exe
     Go to    https://habr.com/ru
 
 Search and check
